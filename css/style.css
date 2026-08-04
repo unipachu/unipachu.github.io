@@ -160,3 +160,16 @@ footer {
     display: block;
     margin: 20px auto;
 }
+
+/* Project media */
+
+.project-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-media img {
+    width: 426px;
+    max-width: 100%;
+    height: auto;
+}
