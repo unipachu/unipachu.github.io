@@ -157,6 +157,10 @@ footer {
     line-height: 1.6;
 }
 
+.project-role {
+    font-weight: bold;
+}
+
 /* Project media */
 
 .project-media {
@@ -168,4 +172,20 @@ footer {
     width: 426px;
     max-width: 100%;
     height: auto;
+}
+
+/* Project links */
+
+.project-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    background-color: black;
+    color: white;
 }
