@@ -161,6 +161,10 @@ footer {
     font-weight: bold;
 }
 
+.project-details {
+    text-align: left;
+}
+
 /* Project media */
 
 .project-media {
