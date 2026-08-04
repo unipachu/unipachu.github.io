@@ -54,7 +54,6 @@ nav {
     color: inherit;
 }
 
-
 /* Footer */
 
 footer {
@@ -71,4 +70,39 @@ footer {
 
 .footer-links a {
     text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-links a {
+    padding: 12px 24px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
 }
