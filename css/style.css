@@ -1,19 +1,39 @@
 /* Global settings */
 
+:root {
+    --bg-color: #202225;
+    --surface-color: #2f3136;
+    --border-color: #40444b;
+    --text-color: #dcddde;
+    --muted-text-color: #b9bbbe;
+    --accent-color: #57f287;
+    --accent-hover-color: #45c97a;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 main {
     flex: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 /* Layout */
@@ -28,7 +48,7 @@ main {
 
 header {
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav {
@@ -51,7 +71,11 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: inherit;
+    color: var(--accent-color);
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
 }
 
 .nav-links a.active {
@@ -64,7 +88,7 @@ nav {
 
 footer {
     padding: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
 
@@ -76,6 +100,11 @@ footer {
 
 .footer-links a {
     text-decoration: none;
+    color: var(--accent-color);
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
 }
 
 /* Hero */
@@ -118,7 +147,9 @@ footer {
 .work-card {
     max-width: 400px;
     padding: 30px;
-    border: 1px solid #ddd;
+
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
 }
 
@@ -153,9 +184,10 @@ footer {
 .project-card {
     width: 700px;
     max-width: 100%;
-    margin: 0 auto;
     padding: 30px;
-    border: 1px solid #ddd;
+
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
 }
 
@@ -190,14 +222,11 @@ footer {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    border: 1px solid currentColor;
-    border-radius: 5px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: #202225;
     text-decoration: none;
-}
-
-.project-card a:hover {
-    background-color: black;
-    color: white;
+    font-weight: bold;
 }
 
 .project-links {
@@ -273,4 +302,39 @@ footer {
 .contact-item p {
     margin: 0;
     line-height: 1.6;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.about-section p,
+.project-details p {
+    color: var(--muted-text-color);
+}
+
+/* Global links */
+
+a {
+    color: var(--accent-color);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.project-links a,
+.work-card a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: #202225;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links a:hover,
+.work-card a:hover {
+    opacity: 0.85;
 }
