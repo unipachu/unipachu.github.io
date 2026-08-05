@@ -216,3 +216,35 @@ footer {
     border: none;
     border-radius: 10px;
 }
+
+/* About page */
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.about-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about-profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.7;
+}
