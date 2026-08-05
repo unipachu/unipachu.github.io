@@ -248,3 +248,23 @@ footer {
 .about-section p {
     line-height: 1.7;
 }
+
+/* Contact page */
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.contact-item {
+    margin-bottom: 40px;
+}
+
+.contact-item h2 {
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+    line-height: 1.6;
+}
