@@ -266,9 +266,9 @@ footer {
 }
 
 .about-profile img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 540px;
+    height: 540px;
+    border-radius: 16px;
     object-fit: cover;
 }
 
